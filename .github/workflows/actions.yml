@@ -54,8 +54,8 @@ jobs:
       - name: Query Vercel API for latest production URL
         id: get_prod
         env:
-          VERCEL_TOKEN: ${{ s1EtR68Ga3BBli7j696M7XY6 }}
-          PROJECT_ID: ${{ prj_bhJHGVfNSmYWzd0BNvePbhYVmXTe }}
+          VERCEL_TOKEN: ${{ secrets.s1EtR68Ga3BBli7j696M7XY6 }}
+          PROJECT_ID: ${{ secrets.prj_bhJHGVfNSmYWzd0BNvePbhYVmXTe }}
         run: |
           RESPONSE=$(curl -s \
             -H "Authorization: Bearer $VERCEL_TOKEN" \
